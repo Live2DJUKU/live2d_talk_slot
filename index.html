@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live2D トークテーマ スロット</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1><img src="live2d_icon.png" alt="自作アイコン" id="header-icon"> Live2D Talk Slot <img src="live2d_icon.png" alt="自作アイコン" id="header-icon-end"></h1>
+        <p>Live2Dに関連したトークテーマで話そう！</p>
+    </header>
+    
+    <main>
+        <div id="slot-container">
+            <div id="slot-reel" class="stopped">
+                <p id="current-theme">スロットを回してね！</p>
+            </div>
+        </div>
+
+        <button id="spin-button" onclick="toggleSpin()">START</button>
+
+        <div id="result-area">
+            </div>
+
+        <button id="toggle-list-button" onclick="toggleThemeList()">
+            ▼全テーマリストを表示 ▼
+        </button>
+        <div id="theme-list-container" class="hidden">
+            </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
